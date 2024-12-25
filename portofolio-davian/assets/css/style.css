@@ -59,13 +59,18 @@ html{
     border-radius: 10px;
     cursor: pointer;
     transition: .4s;
+    text-decoration: none;
 }
 .btn>i{
     margin-left: 10px;
 }
+.btn a{
+    text-decoration: none;
+}
 .btn:hover{
     background: var(--second-color);
     color: var(--color-white);
+    text-decoration: none;
 }
 
 /* ----- GLOBAL ICONS DESIGN ----- */
@@ -562,7 +567,7 @@ footer{
         backdrop-filter: blur(20px);
         width: 100%;
         min-height: 450px;
-        height: 90vh;
+        height: 80vh;
         transition: .3s;
     }
     .nav_menu_list{
@@ -584,20 +589,28 @@ footer{
         justify-content: center;
         align-content: flex-start;
         min-height: 60vh;
+        margin-top: 3em;
+    }
+    .featured-text-btn {
+        justify-content: center;
     }
     .social_icons{
         margin-top: 2em;
+        margin-bottom: 9em;
+        justify-content: center;
     }
     .featured-image{
         order: 1;
         justify-content: center;
         min-height: 150px;
         width: 100%;
-        margin-top: 65px;
+        margin-top: 85px;
+        margin-bottom: 8em;
     }
     .image, .image img{
-        width: 150px;
-        height: 150px;
+        width: 250px;
+        height: 250px;
+        justify-content: center;
     }
     .row{
         display: flex;
