@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- --------- UNICONS ---------- -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
@@ -14,6 +13,7 @@
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
 
     <title>Portfolio | Davian</title>
+
 </head>
 <body>
     <div class="container">
@@ -73,10 +73,26 @@
                     <a href="assets/images/CV/CV Davian.pdf" class="btn">Download CV <i class="uil uil-file-alt"></i></a>
                 </div>
                 <div class="social_icons">
-                    <div class="icon"><i class="uil uil-instagram"></i></div>
-                    <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-                    <div class="icon"><i class="uil uil-envelope"></i></div>
-                    <div class="icon"><i class="uil uil-github-alt"></i></div>
+                    <div class="icon">
+                        <a href="https://www.instagram.com/ddaviiaaann/" target="_blank">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="mailto:davianhuang77@gmail.com">
+                            <i class="uil uil-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="https://github.com/Aiimzzz" target="_blank">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="featured-image">
@@ -107,7 +123,7 @@
                             digital solutions that prioritize intuitive, functional design for optimal user experiences.
                         </p>
                         <div class="about-btn">
-                            <a href="assets/images/CV/CV Davian.pdf" class="btn">Download CV <i class="uil uil-import"></i></a>
+                            <a href="assets/images/CV/CV Davian.pdf" class="btn-download">Download CV <i class="uil uil-import"></i></a>
                         </div>
                     </div>
                 </div>
@@ -193,17 +209,19 @@
                 </div>
                 <div class="col">
                     <div class="form-control">
-                        <div class="form-inputs">
-                            <input type="text" class="input-field" placeholder="Name">
-                            <input type="text" class="input-field" placeholder="Email">
-                        </div>
-                        <div class="text-area">
-                            <textarea placeholder="Message"></textarea>
-                        </div>
-                        <div class="form-button">
-                            <button class="btn">Send <i class="uil uil-message"></i></button>
-                        </div>
-                    </div>
+                        <form action="https://formsubmit.co/davianhuang77@gmail.com" method="POST">
+                            <div class="form-inputs">
+                                <input type="text" class="input-field" name="name" placeholder="Name" required>
+                                <input type="email" class="input-field" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="text-area">
+                                <textarea name="message" placeholder="Message" required></textarea>
+                            </div>
+                            <div class="form-button">
+                                <button class="btn" type="submit">Send <i class="uil uil-message"></i></button>
+                            </div>
+                        </form>
+                    </div>                    
                 </div>
             </div>
         </section>
@@ -233,10 +251,26 @@
                 </ul>
             </div>
             <div class="footer-social-icons">
-                <div class="icon"><i class="uil uil-instagram"></i></div>
-                <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-                <div class="icon"><i class="uil uil-envelope"></i></div>
-                <div class="icon"><i class="uil uil-github-alt"></i></div>
+                <div class="icon">
+                    <a href="https://www.instagram.com/ddaviiaaann/" target="_blank">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="mailto:davianhuang77@gmail.com">
+                        <i class="uil uil-envelope"></i>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="https://github.com/Aiimzzz" target="_blank">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                </div>
             </div>
             <div class="bottom-footer">
                 <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Davian</a> - All rights reserved</p>
@@ -253,5 +287,6 @@
 
     <!-- ----- MAIN JS ----- -->
     <script src="assets/js/main.js"></script>
+    
 </body>
 </html>

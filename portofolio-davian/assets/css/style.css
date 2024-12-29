@@ -18,6 +18,7 @@
 
 }
 
+
 /* ----- BASE ----- */
 *{
     margin: 0;
@@ -225,11 +226,15 @@ nav{
     border-radius: 50%;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
     cursor: pointer;
-}
-.icon:hover{
     color: var(--first-color);
 }
+.icon:hover{
+    color: #000000;
+}
 
+.footer-social-icons .icon>i{
+    color: #000000;
+}
 /* ----- FEATURED IMAGE BOX ----- */
 .featured-image{
     display: flex;
@@ -388,7 +393,7 @@ h3{
 }
 .project-box>i{
     font-size: 50px;
-    color: #00B5E7;
+    color: #000000;
     margin-bottom: 25px;
 }
 .project-box label{
@@ -475,6 +480,7 @@ h3{
     border-radius: 10px;
     padding-inline: 20px;
     outline: none;
+    margin-bottom: 1em;
 }
 textarea{
     width: 100%;
@@ -530,6 +536,7 @@ footer{
 .footer-social-icons{
     display: flex;
     gap: 30px;   
+    color: #000000;
 }
 .bottom-footer{
     font-size: 14px;
@@ -614,8 +621,10 @@ footer{
     }
     .row{
         display: flex;
-        flex-direction: column/* ----- GLOBAL VARIABLES ----- */
-:root{
+        flex-direction: column;
+        
+    /* ----- GLOBAL VARIABLES ----- */
+ :root{
     --body-color: rgb(250, 250, 250);
     --color-white: rgb(255, 255, 255);
 
@@ -632,12 +641,12 @@ footer{
     --font-family: 'Poppins', sans-serif;
     --font-size: 16px;
     --line-height: 1.5;
+
 }
 
 /* ----- BASE ----- */
 *{
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: var(--font-family);
     font-size: var(--font-size);
@@ -671,7 +680,17 @@ html{
 .btn{
     font-weight: 500;
     padding: 12px 20px;
-    background: #efefef;
+    background: #333333;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+    text-decoration: none;
+}
+.btn-download{
+    font-weight: 500;
+    padding: 12px 20px;
+    background: #333333;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -689,6 +708,11 @@ html{
     color: var(--color-white);
     text-decoration: none;
 }
+.btn-download:hover{
+    background: var(--second-color);
+    color: var(--color-white);
+    text-decoration: none;
+}
 
 /* ----- GLOBAL ICONS DESIGN ----- */
 i{
@@ -696,7 +720,7 @@ i{
 }
 
 /* ------- BASE -------- */
-body{
+.body{
     background: var(--body-color);
 }
 .container{
@@ -705,7 +729,7 @@ body{
 }
 
 /* ----- NAVIGATION BAR ----- */
-nav{
+.nav {
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -959,7 +983,6 @@ h3{
     border-radius: 30px;
 }
 .about-btn button:hover{
-   ;
         justify-content: center;
         gap: 50px;
     }
